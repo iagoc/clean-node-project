@@ -16,5 +16,5 @@ This ensures that the business logic is not coupled with the infrastructure deta
 
 
 ## Validator.js
-Lib to validate data
+A lib of string validators and sanitizers.
 
