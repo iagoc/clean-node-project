@@ -18,3 +18,5 @@ This ensures that the business logic is not coupled with the infrastructure deta
 ## Validator.js
 A lib of string validators and sanitizers.
 
+## Tests 
+It's not necessary test libs, so we can create a mock file to return as the lib method returns and use it on the test. 
