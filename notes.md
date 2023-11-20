@@ -19,4 +19,4 @@ This ensures that the business logic is not coupled with the infrastructure deta
 A lib of string validators and sanitizers.
 
 ## Tests 
-It's not necessary test libs, so we can create a mock file to return as the lib method returns and use it on the test. 
+It's not necessary to test the libs, so we can create a mock file to simulate the return of the lib method, using it in the test.
