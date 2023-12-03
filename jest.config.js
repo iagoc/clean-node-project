@@ -7,7 +7,8 @@
 const config = {
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
-  collectCoverageFrom: ['**/src/**/*.js']
+  collectCoverageFrom: ['**/src/**/*.js'],
+  preset: '@shelf/jest-mongodb',
+  watchPathIgnorePatterns: ['globalConfig']
 }
-
 module.exports = config
