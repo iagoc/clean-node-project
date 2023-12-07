@@ -19,7 +19,7 @@ describe('LoadUserByEmail Repository', () => {
     db = mongoHelper.db
   })
   beforeEach(async () => {
-    await db.collection('users').deleteMany()
+    await MongoHelper.clearData('user')
   })
   afterAll(async () => {
     await MongoHelper.disconnect()

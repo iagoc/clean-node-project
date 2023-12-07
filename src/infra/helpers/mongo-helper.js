@@ -8,6 +8,10 @@ module.exports = {
     this.db = this.client.db()
   },
 
+  async clearData (table) {
+    await this.db.collection(table).deleteMany()
+  },
+
   async disconnect () {
     await this.client.close()
     await this.mongoDb.stop()
