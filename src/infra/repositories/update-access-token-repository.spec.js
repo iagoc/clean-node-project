@@ -51,7 +51,7 @@ describe('UpdateAccessToken Repository', () => {
 
   test('Should throw if no params are provided', async () => {
     const { sut } = makeSut()
-    const promise = sut.update('any_id')
-    expect(promise).rejects.toThrow(new MissingParamError('accessToken'))
+    expect(sut.update()).rejects.toThrow(new MissingParamError('userId'))
+    expect(sut.update('any_id')).rejects.toThrow(new MissingParamError('accessToken'))
   })
 })
