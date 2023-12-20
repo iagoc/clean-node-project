@@ -15,5 +15,14 @@ module.exports = {
   async disconnect () {
     await this.client.close()
     await this.mongoDb.stop()
+    this.client = null
+    this.db = null
+  },
+
+  async getCollection (table) {
+    if (!this.client) {
+      await this.connect()
+    }
+    return this.db.collection(table)
   }
 }
